@@ -1,18 +1,12 @@
-cover
-cover.out
-coverage.txt
-.vscode
-.devcontainer
-report.xml
-testlogs.txt
-bin
-config
-default.etcd
-devops
-cover-existing.html
-coverage-existing.txt
-report-existing.xml
-testlogs-existing.txt
-v2
-!v2/boilerplate.go.txt
-.git
+# This file exists to override the upstream v2/.dockerignore file without
+# actually modifying upstream files
+**
+
+# Ignore everything except below
+!/v2/go.mod
+!/v2/go.sum
+!/v2/vendor/**
+!/v2/cmd/**
+!/v2/pkg/**
+!/v2/internal/**
+!/v2/api/**
